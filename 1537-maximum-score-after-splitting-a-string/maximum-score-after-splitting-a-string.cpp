@@ -2,7 +2,6 @@ class Solution {
 public:
     int maxScore(string s) {
         int score = 0;
-        string left, right;
 
         for(int i=0; i<s.length()-1; i++){
             int curntScore = 0;
