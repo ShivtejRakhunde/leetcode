@@ -10,7 +10,7 @@ public:
                     curntScore++;
                 }
             }
-            for(int j=i+1; j<=s.length(); j++){
+            for(int j=i+1; j<s.length(); j++){
                 if(s[j]=='1'){
                     curntScore++;
                 }
