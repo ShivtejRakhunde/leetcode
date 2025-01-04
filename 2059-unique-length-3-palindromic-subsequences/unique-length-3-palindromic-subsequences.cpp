@@ -2,13 +2,13 @@ class Solution {
 public:
     int countPalindromicSubsequence(string s) {
         unordered_set<char> lst;
-
+        //for optimized calculation we add each character once only
         for(char c: s){
             lst.insert(c);
         }
 
         int ans = 0;
-
+        //check first and last occurance of each char
         for(char ltr: lst){
             int i = -1, j = 0;
 
