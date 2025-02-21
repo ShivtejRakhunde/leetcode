@@ -11,7 +11,7 @@ public:
             long y = minheap.top();
             minheap.pop();
 
-            minheap.push(min(x,y) * 2 + max(x,y));
+            minheap.push(x * 2 + y);
 
             kop++;
         }
