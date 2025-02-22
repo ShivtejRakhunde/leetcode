@@ -3,9 +3,13 @@ class Solution {
         int buy = prices[0], profit = 0;
 
         for(int num: prices){
-            buy = Math.min(buy, num);
+            if(num < buy){
+                buy = num;
+            }
 
-            profit = Math.max(profit, num-buy);
+            if(num - buy > profit){
+                profit = num - buy;
+            }
         }
         return profit;
     }
