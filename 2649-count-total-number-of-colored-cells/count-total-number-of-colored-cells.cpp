@@ -1,13 +1,9 @@
 class Solution {
 public:
     long long coloredCells(int n) {
-        long long x = 1; //coloured cell count
-        int y = 4;
-
-        for(int i=1; i<n; i++){
-            x += y;
-            y += 4;
-        }
+        long long x ; //coloured cell count
+        
+        x = 1 + (long long) n*(n-1)*2;
 
         return x;
     }
