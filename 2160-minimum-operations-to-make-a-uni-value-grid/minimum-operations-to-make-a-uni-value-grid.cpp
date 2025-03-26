@@ -2,9 +2,10 @@ class Solution {
 public:
     int CheckOperations(vector<int>& temp, int x){
         int op = 0;
-        int CommNum = temp[temp.size()/2];
+        int CommNum = temp[temp.size()/2];  //median element 
+
         for(int i=0; i<temp.size(); i++){
-            if(temp[i]%x!=CommNum%x){
+            if(temp[i]%x != CommNum%x){
                 return -1;
             }
             else{
@@ -15,6 +16,7 @@ public:
     }
 
     int minOperations(vector<vector<int>>& grid, int x) {
+        
         vector<int> temp;
 
         for (const auto& row : grid) {
